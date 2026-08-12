@@ -21,7 +21,7 @@ introDialogCloseButton.addEventListener("click", function closeIntroDialog(){
 });
 
 //whenever dialog closes, initialise the audio system
-introDialog addEventListener("close",toneInit);
+introDialog.addEventListener("close",toneInit);
 
 //we put the whole function inside the event listener instead as its only called there
 //function closeIntroDialoge(){
