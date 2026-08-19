@@ -8,7 +8,11 @@ const introDialogCloseButton=document.getElementById("intro-dialog-close");
 //console.log(introDialog);
 //find our test button
 const testButton = document.getElementById('test-button');
+//find my key button for testing
+const key=document.getElementById("key-test");
 // init our synth
+//change this to poly synth
+
 const synth =new Tone.Synth().toDestination();
 
 //////Dialog
@@ -41,3 +45,9 @@ function playNote(){
     //play a note for a duration
     synth.triggerAttackRelease("c4","8n");
 }
+
+function playNote(){
+    synth.triggerAttackRelease("d4","8n");
+
+}
+addEventListener("click",playNote);
